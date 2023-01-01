@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>operator admin panel</title>
+         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"  href="../dist/output.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Inter:wght@500&family=Poppins:wght@200;500;600&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body class="m-0 p-0 bg-[#E5E5E5]">
+    <div class="bg-[#E5E5E5] grid gap-[16px]">
+    <div class="bg-white w-full h-[332px] pt-4 px-4 rounded-[6px]">
+    <div class="grid gap-[10px]">
+    <label for="message" class="block leading-[24px] text-[#151414] text-[16px] font-[500] text-gray-900 dark:text-white">News message</label>
+    <textarea id="message" rows="4" class="block h-[112px] pt-[6px] pb-[6px] pr-[8px] pl-[8px] w-full text-[#676769] text-[14px] leading-[20px] font-inter rounded-[4px] border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter news message"></textarea>
+    </div>
+     <div class="flex pt-[16px] w-full lg:flex-row flex-col gap-[16px]">
+                    <div class="grid gap-[10px] md:w-[30%] sm:w-[45%] pb-[10px] lg:pb-0">
+                        <p class="box-border w-full h-[24px] leading-[24px] text-[16px] font-[500] font-inter text-[#151414]">Message title</p>
+                            <div class="flex h-[40px] w-full pl-[8px] pr-[8px] place-content-between box-border flex-row rounded-[4px] border-[1px] border-[#DBDBDB]">             
+                                <input type="text" class="flex justify-center lg:w-[91%] text-[#676769] leading-[20px] text-[14px] font-inter" id="start" name="trip-start" value="Enter title" min="2018-01-01" max="2018-12-31">
+                      </div>
+                     </div>
+                     <div class="grid gap-[10px] md:w-[30%] sm:w-[45%] pb-[10px] lg:pb-0">
+                        <p class="box-border w-full h-[24px] leading-[24px] text-[16px] font-[500] font-inter text-[#151414]">Activation date</p>
+                        <div class="flex h-[40px] w-full pl-[8px] pr-[8px] place-content-between items-center box-border flex-row rounded-[4px] border-[1px] border-[#DBDBDB]">                      
+                            <input type="text" class="flex justify-center lg:w-[91%] text-[#676769] leading-[20px] text-[14px] font-inter" id="start" name="trip-start" value="Select date" min="2018-01-01" max="2018-12-31">
+                             <div><img src="/image/calender.svg" height="20px" width="100%"></div>
+                                     </div>
+                                    </div>
+                          <div class="grid gap-[10px] md:w-[30%] sm:w-[45%] pb-[10px] lg:pb-0">
+                            <p class="box-border w-full h-[24px] leading-[24px] text-[16px] font-[500] font-inter text-[#151414]">Expire date</p>
+                            <div class="flex h-[40px] w-full pl-[8px] pr-[8px] place-content-between items-center box-border flex-row rounded-[4px] border-[1px] border-[#DBDBDB]">
+                               <input type="text" class="flex justify-center lg:w-full text-[#676769] leading-[20px] text-[14px] font-inter" id="start" name="trip-start" value="Select date" min="2018-01-01" max="2018-12-31">
+                                <div><img src="/image/calender.svg" height="20px" width="100%"></div>
+                                    </div>
+                                    </div>
+                                     <div class="grid gap-[10px] md:w-[30%] sm:w-[45%] pb-[10px] lg:pb-0">
+                               <p class="box-border w-full h-[24px] leading-[24px] text-[16px] font-[500] font-inter text-[#151414]">Assign counter/agent</p>
+                                   <div class="flex h-[40px] w-full pl-[8px] pr-[8px] place-content-between box-border flex-row rounded-[4px] border-[1px] border-[#DBDBDB]">             
+                                          <input type="text" class="flex justify-center lg:w-[91%] text-[#676769] leading-[20px] text-[14px] font-inter" id="start" name="trip-start" value="Select counter/agent" min="2018-01-01" max="2018-12-31">
+                             </div>
+                            </div>
+                                 </div>
+                                <div class="flex justify-center items-center mt-[20px]">
+                                    <button class="text-[16px] flex gap-[5%] justify-center items-center h-[46px] leading-[24px] font-[500] font-inter bg-[#f04935] hover:bg-white hover:text-[#f04935] rounded-[100px] border-[1px] box-border w-[119px] text-white"><span class="text-xl text-center flex justify-center items-center">+</span>Copy trip</button>
+                                </div>
+    </div>
+ <div>
+    <div class="bg-white flex justify-center items-center w-full h-[377px] rounded-t-[6px] box-border bg-[#4D4D4F] h-[36px]">
+        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">SL</p></div>
+        <div class="h-[36px] w-[20%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">MESSAGE TITLE</p></div>
+        <div class="h-[36px] w-[30%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">MESSAGE</p></div>
+        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">ACTIVATION<BR>DATE</p></div>
+        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">EXPIRE DATE</p></div>
+        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">STATUS</p></div>
+        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">ACTION</p></div>
+    </div>
+    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
+        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">01</p></div>
+        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Message title</p></div>
+        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">28 July 2022</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">EXPIRE DATE</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[500] leading-[16px] text-[12px]">Active</button></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[5%] justify-center items-center h-[24px] leading-[24px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="9.33px" width="9.33px">Edit</button></div>
+    </div>
+    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
+        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">01</p></div>
+        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Message title</p></div>
+        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">28 July 2022</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">EXPIRE DATE</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[500] leading-[16px] text-[12px]">Active</button></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[5%] justify-center items-center h-[24px] leading-[24px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="9.33px" width="9.33px">Edit</button></div>
+    </div>
+    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
+        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">01</p></div>
+        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Message title</p></div>
+        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">28 July 2022</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">EXPIRE DATE</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[500] leading-[16px] text-[12px]">Active</button></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[5%] justify-center items-center h-[24px] leading-[24px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="9.33px" width="9.33px">Edit</button></div>
+    </div>
+    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
+        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">01</p></div>
+        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Message title</p></div>
+        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">28 July 2022</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">EXPIRE DATE</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[500] leading-[16px] text-[12px]">Active</button></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[5%] justify-center items-center h-[24px] leading-[24px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="9.33px" width="9.33px">Edit</button></div>
+    </div>
+    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
+        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">01</p></div>
+        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Message title</p></div>
+        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">28 July 2022</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">EXPIRE DATE</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[500] leading-[16px] text-[12px]">Active</button></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[5%] justify-center items-center h-[24px] leading-[24px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="9.33px" width="9.33px">Edit</button></div>
+    </div>
+    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
+        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">01</p></div>
+        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Message title</p></div>
+        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">28 July 2022</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[500] font-inter text-[14px] leading-[16px]">EXPIRE DATE</p></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[500] leading-[16px] text-[12px]">Active</button></div>
+        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[5%] justify-center items-center h-[24px] leading-[24px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="9.33px" width="9.33px">Edit</button></div>
+    </div>
+ </div>
+</div>
+     </body>
+  </html>
+
+                        
