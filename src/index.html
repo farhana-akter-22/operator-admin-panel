@@ -4,117 +4,293 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>operator admin panel</title>
+        <title>check-box</title>
          <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet"  href="../dist/output.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Inter:wght@500&family=Poppins:wght@200;500;600&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
-    <body class="m-0 p-0 bg-[#E5E5E5]">
-    <div class="bg-[#E5E5E5] grid gap-[16px]">
-    <div class="bg-white w-full h-[332px] pt-4 px-4 rounded-[6px]">
-    <div class="grid gap-[10px]">
-    <label for="message" class="block leading-[24px] text-[#151414] text-[16px] font-[500] text-gray-900 dark:text-white">News message</label>
-    <textarea id="message" rows="4" class="block h-[112px] pt-[6px] pb-[6px] pr-[8px] pl-[8px] w-full text-[#676769] text-[14px] leading-[20px] font-inter rounded-[4px] border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter news message"></textarea>
+    <body class="flex bg-[#424040] justify-center">
+     
+        <div class="bg-white w-full h-[900px] my-16 mx-16 rounded-[6px]">
+            <div class="bg-[#F04935] px-[16px] flex items-center place-content-between h-[56px] rounded-t-[6px]">
+                <p class="text-white text-[16px] leading-[24px] font-[500] font-inter">ASSIGN COUNTER/AGENT</p>
+                <img src="/image/cross.svg" height="12.73px" width="12.73px">
+        </div>
+       <div class="flex items-center place-content-between p-4">
+        <div>
+        <p class="font-inter text-[16px] font-[500] leading-[24px] text-[#1E88E5]">OWN COUNTER</p>
     </div>
-     <div class="flex pt-[16px] w-full lg:flex-row flex-col gap-[16px]">
-                    <div class="grid gap-[10px] md:w-[30%] sm:w-[45%] pb-[10px] lg:pb-0">
-                        <p class="box-border w-full h-[24px] leading-[20px] text-[14px] font-[400] font-inter text-[#151414]">Message title</p>
-                            <div class="flex h-10 w-full pl-[8px] pr-[8px] place-content-between box-border flex-row rounded-[4px] border-[1px] border-[#DBDBDB]">             
-                                <input type="text" class="flex justify-center lg:w-[91%] text-[#676769] leading-[20px] text-[14px] font-inter" id="start" name="trip-start" value="Enter title" min="2018-01-01" max="2018-12-31">
-                      </div>
-                     </div>
-                     <div class="grid gap-[10px] md:w-[30%] sm:w-[45%] pb-[10px] lg:pb-0">
-                        <p class="box-border w-full h-[24px] leading-[20px] text-[14px] font-[400] font-inter text-[#151414]">Activation date</p>
-                        <div class="flex h-[40px] w-full pl-[8px] pr-[8px] place-content-between items-center box-border flex-row rounded-[4px] border-[1px] border-[#DBDBDB]">                      
-                            <input type="text" class="flex justify-center lg:w-[91%] text-[#676769] leading-[20px] text-[14px] font-inter" id="start" name="trip-start" value="Select date" min="2018-01-01" max="2018-12-31">
-                             <div><img src="/image/calender.svg" height="20px" width="100%"></div>
-                                     </div>
-                                    </div>
-                          <div class="grid gap-[10px] md:w-[30%] sm:w-[45%] pb-[10px] lg:pb-0">
-                            <p class="box-border w-full h-[24px] leading-[20px] text-[14px] font-[400] font-inter text-[#151414]">Expire date</p>
-                            <div class="flex h-[40px] w-full pl-[8px] pr-[8px] place-content-between items-center box-border flex-row rounded-[4px] border-[1px] border-[#DBDBDB]">
-                               <input type="text" class="flex justify-center lg:w-full text-[#676769] leading-[20px] text-[14px] font-inter" id="start" name="trip-start" value="Select date" min="2018-01-01" max="2018-12-31">
-                                <div><img src="/image/calender.svg" height="20px" width="100%"></div>
-                                    </div>
-                                    </div>
-                                     <div class="grid gap-[10px] md:w-[30%] sm:w-[45%] pb-[10px] lg:pb-0">
-                               <p class="box-border w-full h-[24px] leading-[20px] text-[14px] font-[400] font-inter text-[#151414]">Assign counter/agent</p>
-                                   <div class="flex h-[40px] w-full pl-[8px] pr-[8px] place-content-between box-border flex-row rounded-[4px] border-[1px] border-[#DBDBDB]">             
-                                          <input type="text" class="flex justify-center lg:w-[91%] text-[#676769] leading-[20px] text-[14px] font-inter" id="start" name="trip-start" value="Select counter/agent" min="2018-01-01" max="2018-12-31">
-                             </div>
-                            </div>
-                                 </div>
-                                <div class="flex justify-center items-center mt-[20px]">
-                                    <button class="text-[12px] flex gap-[5%] justify-center items-center h-[46px] leading-[16px] font-[500] font-inter bg-[#f04935] hover:bg-white hover:text-[#f04935] rounded-[100px] border-[1px] box-border w-[119px] text-white"><span class="text-lg text-center flex justify-center items-center">+</span>Copy trip</button>
-                                </div>
+        <div class="flex gap-[11px] items-center">
+            <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+        </div>
     </div>
- <div>
-    <div class="bg-white flex justify-center items-center w-full h-[377px] rounded-t-[6px] box-border bg-[#4D4D4F] h-[36px]">
-        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">SL</p></div>
-        <div class="h-[36px] w-[20%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">MESSAGE TITLE</p></div>
-        <div class="h-[36px] w-[30%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">MESSAGE</p></div>
-        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">ACTIVATION<BR>DATE</p></div>
-        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">EXPIRE DATE</p></div>
-        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">STATUS</p></div>
-        <div class="h-[36px] w-[10%] border-r-[1px] border-white flex items-center justify-center"><p class="box-border text-center text-white font-[500] font-inter text-[11px] leading-[16px]">ACTION</p></div>
+    <div class="flex p-4 w-full">
+        <div class="w-[25%] grid gap-[11px]">
+            <p class="text-[#151414] font-[400] text-4 font-inter">Mohakhali Counter</p>
+            <div class="flex gap-[11px] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+            </div>
+        </div>
+        <div class="w-[75%]">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+            <hr class="border-[#dbdbdb] border-[solid 1px] border-dashed w-[100%] my-4">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+        </div>
     </div>
-    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
-        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">01</p></div>
-        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">Message title</p></div>
-        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px] pr-1 pl-1 pt-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">28 July 2022</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">EXPIRE DATE</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[400] leading-[20px] text-[14px]">Active</button></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[7%] justify-center text-center items-center h-[24px] leading-[16px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%] m-0 p-0"><img src="/image/Vector.svg" height="11.98px" width="12px"><p class="m-0 text-center pb-0.5">Edit</p></button></div>
+   
+    <hr class="border-[#dbdbdb] border-t-[1px] mx-4">
+    <div class="flex p-4 w-full">
+        <div class="w-[25%] grid gap-[11px]">
+            <p class="text-[#151414] font-[400] text-4 font-inter">Arambag Counter</p>
+            <div class="flex gap-[11px] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+            </div>
+        </div>
+        <div class="w-[75%]">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+        </div>
     </div>
-    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
-        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">01</p></div>
-        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">Message title</p></div>
-        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px] pr-1 pl-1 pt-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">28 July 2022</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">EXPIRE DATE</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[400] leading-[20px] text-[14px]">Active</button></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[7%] justify-center items-center h-[24px] leading-[16px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="11.98px" width="12px"><p class="m-0 text-center pb-0.5">Edit</p></button></div>
+    <hr class="border-[#dbdbdb] border-t-[1px] mx-4">
+    <div class="flex p-4 w-full">
+        <div class="w-[25%] grid gap-[11px]">
+            <p class="text-[#151414] font-[400] text-4 font-inter">Counter 2</p>
+            <div class="flex gap-[11px] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+            </div>
+        </div>
+        <div class="w-[75%]">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+        </div>
     </div>
-    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
-        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">01</p></div>
-        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">Message title</p></div>
-        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px] pr-1 pl-1 pt-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">28 July 2022</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">EXPIRE DATE</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[400] leading-[20px] text-[14px]">Active</button></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[7%] justify-center items-center h-[24px] leading-[16px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="11.98px" width="12px"><p class="m-0 text-center pb-0.5">Edit</p></button></div>
+    <hr class="border-[#dbdbdb] border-t-[1px] mx-4">
+    <div class="flex p-4 w-full">
+        <div class="w-[25%] grid gap-[11px]">
+            <p class="text-[#151414] font-[400] text-4 font-inter">Counter 3</p>
+            <div class="flex gap-[11px] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+            </div>
+        </div>
+        <div class="w-[75%]">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+        </div>
     </div>
-    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
-        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">01</p></div>
-        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">Message title</p></div>
-        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px] pr-1 pl-1 pt-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">28 July 2022</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">EXPIRE DATE</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[400] leading-[20px] text-[14px]">Active</button></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[7%] justify-center items-center h-[24px] leading-[16px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="11.98px" width="12px"><p class="m-0 text-center pb-0.5">Edit</p></button></div>
+    <hr class="border-[#dbdbdb] border-t-[1px] mx-4">
+    <div class="flex p-4 w-full">
+        <div class="w-[25%] grid gap-[11px]">
+            <p class="text-[#151414] font-[400] text-4 font-inter">Counter 4</p>
+            <div class="flex gap-[11px] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+            </div>
+        </div>
+        <div class="w-[75%]">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+        </div>
     </div>
-    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
-        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">01</p></div>
-        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">Message title</p></div>
-        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px] pr-1 pl-1 pt-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">28 July 2022</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">EXPIRE DATE</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[400] leading-[20px] text-[14px]">Active</button></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[7%] justify-center items-center h-[24px] leading-[16px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="11.98px" width="12px"><p class="m-0 text-center pb-0.5">Edit</p></button></div>
+    <hr class="border-[#dbdbdb] border-t-[1px]">
+    <div class="flex items-center place-content-between px-4 pt-4">
+        <div>
+        <p class="font-inter text-[16px] font-[500] leading-[24px] text-[#1E88E5]">OWN COUNTER</p>
     </div>
-    <div class="bg-white flex justify-center items-center w-full h-[377px] border-b-[1px] border-[#DBDBDB] box-border bg-white h-[56px]">
-        <div class="h-[56px] w-[10%] border-r-[1px] border-l-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">01</p></div>
-        <div class="h-[56px] w-[20%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">Message title</p></div>
-        <div class="h-[56px] w-[30%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border truncate text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px] pr-1 pl-1 pt-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu non ridiculus tristique pharetra massa. Ac, sed imperdiet pellentesque est ut dolor at. Orci ac accumsan tempor vitae donec arcu non. Sit adipiscing dui enim, accumsan. </p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">28 July 2022</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><p class="box-border text-center text-[#151414] font-[400] font-inter text-[14px] leading-[20px]">EXPIRE DATE</p></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="h-[24px] rounded-[4px] text-white bg-[#48A43F] w-[80%] text-inter font-[400] leading-[20px] text-[14px]">Active</button></div>
-        <div class="h-[56px] w-[10%] border-r-[1px] border-[#DBDBDB] flex items-center justify-center"><button class="text-[12px] flex gap-[7%] justify-center items-center h-[24px] leading-[16px] text-[#151414] font-[500] font-inter hover:bg-white rounded-[4px] border-[1px] box-border w-[80%]"><img src="/image/Vector.svg" height="11.98px" width="12px"><p class="m-0 text-center pb-0.5">Edit</p></button></div>
+        <div class="flex gap-[11px] items-center">
+            <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+        </div>
     </div>
- </div>
+    <div class="flex p-4 w-full">
+        <div class="w-[25%] grid gap-[11px]">
+            <p class="text-[#151414] font-[400] text-4 font-inter">Counter 4</p>
+            <div class="flex gap-[11px] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+            </div>
+        </div>
+        <div class="w-[75%]">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+        </div>
+    </div>
+    <hr class="border-[#dbdbdb] border-t-[1px]">
+    <div class="flex p-4 w-full">
+        <div class="w-[25%] grid gap-[11px]">
+            <p class="text-[#151414] font-[400] text-4 font-inter">Counter 4</p>
+            <div class="flex gap-[11px] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+            </div>
+        </div>
+        <div class="w-[75%]">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="flex p-4 w-full">
+        <div class="w-[25%] grid gap-[11px]">
+            <p class="text-[#151414] font-[400] text-4 font-inter">Counter 4</p>
+            <div class="flex gap-[11px] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+            </div>
+        </div>
+        <div class="w-[75%]">
+            <div class="flex place-content-between"><div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Agent name</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+            <div class="flex gap-[11px] w-[30%] items-center">
+                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="text-4 font-[400] font-inter leading-[24px] text-[#151414] dark:text-gray-300">Fahim Ahmed</label>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="flex justify-center items-center border-[#dbdbdb] border-t-[1px] static bottom-0">
+        <button class="text-[12px] mt-[20px] mb-[20px] opacity-30 flex gap-[5%] justify-center items-center h-[46px] leading-[16px] font-[500] font-inter bg-[#f04935] hover:bg-white hover:text-[#f04935] rounded-[100px] border-[1px] box-border w-[119px] text-white"><img src="/image/Vector.svg" width="12.73px" height="9.2px">Select</button>
+    </div>
+    </div>
+
+            </body>
+    <!-- <body class="m-0 p-0">
+        <div class="bg-[#F04935] px-[16px] flex items-center place-content-between h-[56px] rounded-t-[6px]">
+            <p class="text-white text-[16px] leading-[24px] font-[500] font-inter">ASSIGN COUNTER/AGENT</p>
+            <img src="/image/cross.svg" height="12.73px" width="12.73px">
+    </div>
+   <div class="flex items-center place-content-between p-4">
+    <div>
+    <p class="font-inter text-[16px] font-[500] leading-[24px] text-[#1E88E5]">OWN COUNTER</p>
 </div>
-     </body>
+    <div class="flex gap-[11px] items-center">
+        <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+    </div>
+</div>
+<div class="flex w-full">
+    <div class="px-4 grid gap-[11px] w-[20%]">
+        <p class="text-[#151414] font-[400] text-4 font-inter">Mohakhali Counter</p>
+        <div class="flex gap-[11px] items-center">
+            <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+        </div>
+    </div>
+    <div class="flex place-content-between gap-[]">
+        <div class="flex gap-[11px] items-center">
+            <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+        </div>
+        <div class="flex gap-[11px] items-center">
+            <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+        </div>
+        <div class="flex gap-[11px] items-center">
+            <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="text-4 font-[400] font-inter leading-24px text-[#151414] dark:text-gray-300">Mark all</label>
+        </div>
+    </div>
+</div>
+     </body> -->
   </html>
 
                         
